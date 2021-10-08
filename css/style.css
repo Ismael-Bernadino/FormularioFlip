@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: url("../img/skyscraper_building_architecture_sky_bottom_view_118409_6000x4000.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+.form__cover{
+    width: 320px;
+    height: 420px;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+.form{
+    position: absolute;
+    background: #fff;
+    border-radius: 10px;
+    width: 280px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s transform;
+}
+.form--login{
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+.form--register{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.form__title{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.form__input{
+    position: relative;
+}
+.input__txt{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    text-align: center;
+    color: steelblue;
+    background: #fff;
+}
+.input__content{
+    outline: none;
+    padding: 8px 10px;
+    border: 2px solid rgb(177, 177, 177);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.form__btn{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: steelblue;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.form__btn:hover{
+    background: rgb(51, 94, 129);
+}
+.link{ 
+    font-size: .8rem;
+    cursor: pointer;
+}
